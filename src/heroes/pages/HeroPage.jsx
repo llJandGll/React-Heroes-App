@@ -11,7 +11,8 @@ export const HeroPage = () => {
 
   const { id , /* ...rest */ } = useParams();
 
-  const imgUrl = `/assets/heroes/${id}.jpg`
+  const imgUrl = `/React-Heroes-App/heroes/${id}.jpg`;
+
   const hero = useMemo( () => getHeroById( id ) , [ id ])
 
   console.log(hero)
