@@ -3,12 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://llJandGll.github.io/React-Heroes-App",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d docs"
+    "preview": "vite preview"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
@@ -27,6 +29,5 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "gh-pages": "^6.1.1",
     "vite": "^5.2.0"
-  },
-  "homepage": "https://<tu-nombre-de-usuario>.github.io/<nombre-del-repositorio>/"
+  }
 }

@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base : "/React-Heroes-App/",
   plugins: [react()],
+  base: '/React-Heroes-App/',  // Añade esta línea
+  build: {
+    outDir: 'docs'  // Define la carpeta de salida
+  }
 })
